@@ -1,8 +1,8 @@
 function About() {
     return (
         <section id="about" className="section">
-            <h2>О компании</h2>
-            <p>Информация о вашей компании.</p>
+            <h2>Про компанію</h2>
+            <p>Інформація про вашу компанію.</p>
         </section>
     );
 }

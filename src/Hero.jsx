@@ -1,8 +1,8 @@
 function Hero() {
     return (
-        <section id="hero" className="section">
-            <h1>Добро пожаловать!</h1>
-            <p>Это привлекающий блок.</p>
+        <section id="hero" className="hero">
+            <h1>Премʼєр</h1>
+            <p>м’ясна фабрика</p>
         </section>
     );
 }
