@@ -1,5 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 
+import logo from "./assets/logo.png";
+
 function Header() {
     const location = useLocation();
 
@@ -8,7 +10,9 @@ function Header() {
     return (
         <header className="header">
             <div className="container">
-                <Link to="/" className="logo">ПРЕМʼЄР</Link>
+                <Link to="/" className="logo" aria-label="ПРЕМʼЄР — на головну">
+                    <img src={logo} alt="ПРЕМʼЄР" />
+                </Link>
                 <nav className="nav">
                     <Link to="/about" className={isActive("/about") ? "active" : ""}>про нас</Link>
                     <Link to="/products" className={isActive("/products") ? "active" : ""}>продукція</Link>

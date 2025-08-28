@@ -9,6 +9,9 @@ html {
 
 body {
   margin: 0;
+  background-color: #1f1f1f;
+  background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+  color: #f0f0f0;
 }
 
 .section {
@@ -17,6 +20,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
 }
 
 /* Header */
@@ -25,7 +30,8 @@ header.header {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #e0e0e0;
+  background: rgba(30, 30, 30, 0.95);
+  backdrop-filter: blur(6px);
   z-index: 1000;
 }
 
@@ -41,30 +47,67 @@ header .container {
 .logo {
   font-size: 24px;
   font-weight: 700;
-  color: black;
+  color: #ffffff;
   text-decoration: none;
-  font-family: 'Inter', sans-serif;
 }
 
 .nav {
   display: flex;
-  gap: 30px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
 .nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-  font-family: 'Inter', sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 22px;
   font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+
+  border-radius: 9999px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: #181818;
+
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
+
+.nav a:hover {
+  background: #1f1f1f;
+  border-color: rgba(255,255,255,0.25);
+}
+
+.nav a.active {
+  background: #2a2a2a;
+  border-color: rgba(255,255,255,0.35);
+  color: #fff;
+}
+
+.logo{
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  height: clamp(32px, 6vw, 48px);
+  width: auto;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+}
+
+.logo:hover img{ opacity: .9; }
+
 
 /* Hero */
 
 .hero {
   height: 100vh;
-  background: white;
+  background: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,15 +119,15 @@ header .container {
 .hero h1 {
   font-size: 128px;
   font-weight: 700;
-  font-family: 'Inter', sans-serif;
   margin: 0;
   line-height: 1;
+  color: #f5f5f5;
 }
 
 .hero p {
   font-size: 38px;
   font-weight: 600;
-  margin-top: 20px;
-  margin-left: 400px;
-  font-family: 'Inter', sans-serif;
+  margin-top: 30px;
+  color: #d1d1d1;
 }
+
