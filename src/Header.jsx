@@ -15,8 +15,10 @@ function Header() {
                 </Link>
                 <nav className="nav">
                     <Link to="/about" className={isActive("/about") ? "active" : ""}>про нас</Link>
-                    <Link to="/products" className={isActive("/products") ? "active" : ""}>продукція</Link>
                     <Link to="/production" className={isActive("/production") ? "active" : ""}>виробництво</Link>
+                    <Link to="/products" className={isActive("/products") ? "active" : ""}>продукція</Link>
+                    <Link to="/stores" className={isActive("/stores") ? "active" : ""}>магазини</Link>
+                    <Link to="/vacancies" className={isActive("/vacancies") ? "active" : ""}>вакансії</Link>
                     <Link to="/contact" className={isActive("/contact") ? "active" : ""}>контакти</Link>
                 </nav>
             </div>
