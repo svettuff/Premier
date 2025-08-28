@@ -14,12 +14,12 @@ function Header() {
                     <img src={logo} alt="ПРЕМʼЄР" />
                 </Link>
                 <nav className="nav">
-                    <Link to="/about" className={isActive("/about") ? "active" : ""}>про нас</Link>
-                    <Link to="/production" className={isActive("/production") ? "active" : ""}>виробництво</Link>
-                    <Link to="/products" className={isActive("/products") ? "active" : ""}>продукція</Link>
-                    <Link to="/stores" className={isActive("/stores") ? "active" : ""}>магазини</Link>
-                    <Link to="/vacancies" className={isActive("/vacancies") ? "active" : ""}>вакансії</Link>
-                    <Link to="/contact" className={isActive("/contact") ? "active" : ""}>контакти</Link>
+                    <Link to="/about" className={isActive("/about") ? "active" : ""}>Про нас</Link>
+                    <Link to="/production" className={isActive("/production") ? "active" : ""}>Виробництво</Link>
+                    <Link to="/products" className={isActive("/products") ? "active" : ""}>Продукція</Link>
+                    <Link to="/stores" className={isActive("/stores") ? "active" : ""}>Магазини</Link>
+                    <Link to="/vacancies" className={isActive("/vacancies") ? "active" : ""}>Вакансії</Link>
+                    <Link to="/contact" className={isActive("/contact") ? "active" : ""}>Контакти</Link>
                 </nav>
             </div>
         </header>
