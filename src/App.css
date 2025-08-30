@@ -23,6 +23,21 @@ body {
   border-radius: 12px;
 }
 
+.pager-container {
+  height: 100vh;
+  overflow: hidden;
+  overscroll-behavior: none;
+  touch-action: none;
+}
+
+.pager-section {
+  height: 100vh;
+  overflow: hidden;
+  will-change: transform;
+}
+
+/* Buttons */
+
 .btn {
   display: inline-flex;
   align-items: center;

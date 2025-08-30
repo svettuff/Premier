@@ -227,7 +227,7 @@ export default function App() {
     return (
         <>
             <Header />
-            <main className="pager-container" id="pager-root" role="region" aria-label="Секции страницы">
+            <main className="pager-container" id="pager-root" role="region" aria-label="Sections">
                 <div ref={(el) => (sectionsRef["/"].current = el)} className="pager-section" id="home">
                     <Hero />
                 </div>
