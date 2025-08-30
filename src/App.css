@@ -165,4 +165,4 @@ header .container {
   margin-top: 10px;
 }
 
-
+.hero { position: relative; overflow: hidden; }
